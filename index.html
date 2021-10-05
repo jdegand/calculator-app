@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="theme-div">
+      <div>calc</div>
+      <div class="theme-container">
+        <h6>THEME</h6>
+        <div class="toggle-container">
+            <div class="toggle-numbers">
+              <span id="one">1</span>
+              <span id="two">2</span>
+              <span id="three">3</span>
+            </div>
+            <div class="theme-toggle">
+              <div id="circle"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="display" class="display">0</section>
+    <section class="calc-body">
+        <button class="button number">7</button>
+        <button class="button number">8</button>
+        <button class="button number">9</button>
+        <button id="delete" class="button">DEL</button>
+        <button class="button number">4</button>
+        <button class="button number">5</button>
+        <button class="button number">6</button>
+        <button class="button operation">+</button>
+        <button class="button number">1</button>
+        <button class="button number">2</button>
+        <button class="button number">3</button>
+        <button class="button operation">-</button>
+        <button id="decimal" class="button">.</button>
+        <button class="button number">0</button>
+        <button class="button operation">/</button>
+        <button class="button operation">x</button>
+        <button id="reset" class="span-2 button">RESET</button>
+        <button id="equals" class="span-2 button">=</button>
+    </section>
+  </main>
+</body>
+</html>

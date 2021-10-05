@@ -1,0 +1,277 @@
+:root {
+--mainBackground: hsl(222, 26%, 31%);
+--toogleKeypadBackground: hsl(223, 31%, 20%);
+--screenBackground: hsl(224, 36%, 15%);
+--desaturatedKeyBackground: hsl(225, 21%, 49%);
+--desaturatedKeyShadow: hsl(224, 28%, 35%);
+
+--keyBackgroundToggle: hsl(6, 63%, 50%);
+--equalsKeyShadow: hsl(6, 70%, 34%);
+
+--keyBackground: hsl(30, 25%, 89%);
+--keyShadow: hsl(28, 16%, 65%);
+--veryDarkGrayishBlue: hsl(221, 14%, 31%);
+
+
+--theme2-main-background: hsl(0, 0%, 90%);
+--theme2-toggle-keypad-bg: hsl(0, 5%, 81%);
+--theme2-screen-bg: hsl(0, 0%, 93%);
+--theme2-delete-key-bg: hsl(185, 42%, 37%);
+--theme2-delete-key-shadow: hsl(185, 58%, 25%);
+
+--theme2-key-bg: hsl(25, 98%, 40%);
+--theme2-key-shadow: hsl(25, 99%, 27%);
+
+--theme2-key-bg2: hsl(45, 7%, 89%);
+--theme2-key-shadow2: hsl(35, 11%, 61%);
+--theme2-text: hsl(60, 10%, 19%);
+
+
+--theme3-main-background: hsl(268, 75%, 9%);
+--theme3-toggle-keypad-bg: hsl(268, 71%, 12%);
+--theme3-delete-key-background: hsl(281, 89%, 26%);
+--theme3-delete-key-shadow: hsl(285, 91%, 52%);
+
+--theme3-key-bg: hsl(176, 100%, 44%);
+--theme3-key-shadow: hsl(177, 92%, 70%);
+
+--theme3-key-bg2: hsl(268, 47%, 21%);
+--theme3-key-shadow2: hsl(290, 70%, 36%);
+--theme3-text: hsl(52, 100%, 62%);
+--theme-3-equals-text: hsl(198, 20%, 13%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--mainBackground);
+    font-family: "Spartan", sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: #fff;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+#one, 
+#two, 
+#three {
+    cursor: pointer;
+}
+
+#equals {
+    background: var(--keyBackgroundToggle);
+    box-shadow: 0 3px 0 0 var(--equalsKeyShadow);
+    color: #fff;
+}
+
+#delete,
+#reset {
+    background: var(--desaturatedKeyBackground);
+    box-shadow: 0 3px 0 0 var(--desaturatedKeyShadow);
+    color: #fff;
+}
+
+.display {
+    background: var(--screenBackground);
+    text-align: right;
+    min-height: 50px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.theme-div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.theme-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 170px;
+}
+
+.toggle-container {
+    margin-left: 20px;
+    width: 100px;
+}
+
+.theme-toggle {
+    background: var(--screenBackground);
+    height: 20px;
+    width: 80px;
+    border-radius: 10px;
+    padding: 0 5px;
+    position: relative;
+}
+
+
+.calc-body {
+    width: 500px;
+    background: #ddd;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    background: var(--screenBackground);
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(221, 14%, 31%);
+    background: var(--keyBackground);
+    box-shadow: 0 3px 0 0 var(--keyShadow);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.span-2 {
+    grid-column: span 2;
+    width: 218px;
+}
+
+span:nth-of-type(2) {
+    margin: 0 5px;
+}
+
+#circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: var(--keyBackgroundToggle);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* theme-2 */
+
+.theme2 {
+    background: var(--theme2-main-background);
+}
+
+.theme2 #delete, 
+.theme2 #reset {
+    background: var(--theme2-delete-key-bg);
+    box-shadow: 0 3px 0 0 var(--theme2-delete-key-shadow);
+    color: #fff;
+}
+
+.theme2 #circle {
+    background: var(--theme2-key-bg);
+}
+
+.theme2 .theme-toggle {
+    background: var(--theme2-toggle-keypad-bg);
+}
+
+.theme2 #equals {
+    background: var(--theme2-key-bg);
+    box-shadow: 0 3px 0 0 var(--theme2-key-shadow);
+    color: #fff;
+}
+
+.theme2 .button {
+    color: var(--theme2-text);
+    background: var(--theme2-key-bg2);
+    box-shadow: 0 3px 0 0 var(--theme2-key-shadow2);
+}
+
+.theme2 .calc-body, 
+.theme2 #display {
+    background: var(--theme2-toggle-keypad-bg);
+    color: var(--theme2-text);
+}
+
+.theme2 .theme-div {
+    color: var(--theme2-text);
+}
+
+/* theme-3 */
+
+.theme3 {
+    background: var(--theme3-main-background);
+}
+
+.theme3 #delete, 
+.theme3 #reset {
+    background: var(--theme3-delete-key-background);
+    box-shadow: 0 3px 0 0 var(--theme3-delete-key-shadow);
+    color: #fff;
+}
+
+.theme3 #circle {
+    background: var(--theme3-key-bg);
+}
+
+.theme3 .theme-toggle {
+    background: var(--theme3-toggle-keypad-bg);
+}
+
+.theme3 #equals {
+    background: var(--theme3-key-bg);
+    box-shadow: 0 3px 0 0 var(--theme3-key-shadow);
+    color: var(--theme-3-equals-text);
+}
+
+.theme3 .button {
+    color: var(--theme3-text);
+    background: var(--theme3-key-bg2);
+    box-shadow: 0 3px 0 0 var(--theme3-key-shadow2);
+}
+
+.theme3 .calc-body, 
+.theme3 #display {
+    background: var(--theme3-toggle-keypad-bg);
+    color: var(--theme3-text);
+}
+
+.theme3 .theme-div {
+    color: var(--theme3-text);
+}
+
+@media (max-width: 500px) {
+    .calc-body {
+        width: 100vw;
+    }
+    .button {
+        width: 75px;
+        height: 50px;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .span-2 {
+        width: 160px;
+    }
+}
