@@ -30,7 +30,7 @@ Users should be able to:
 
 ![](./calc-desktop-theme-3.png)
 
-![](./calc-desktop-theme-1.png)
+![](./calc-mobile-theme-1.png)
 
 ## My process
 
@@ -39,7 +39,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- Grid
 
 ### What I learned
 
@@ -57,10 +57,10 @@ Users should be able to:
 
 ### Useful resources
 
-- [Stack Overflow](https://stackoverflow.com/questions/23661970/3-state-css-toggle-switch)
-- [Stack Overflow](https://stackoverflow.com/questions/6479236/calculate-string-value-in-javascript-not-using-eval)
-- [Stack Overflow](https://stackoverflow.com/questions/1423777/how-can-i-check-whether-a-radio-button-is-selected-with-javascript)
-- [Stack Overflow](https://stackoverflow.com/questions/25793716/how-to-change-style-of-radio-and-checkbox-input)
+- [Stack Overflow](https://stackoverflow.com/questions/23661970/3-state-css-toggle-switch) - CSS Toggle
+- [Stack Overflow](https://stackoverflow.com/questions/6479236/calculate-string-value-in-javascript-not-using-eval) - avoid eval
+- [Stack Overflow](https://stackoverflow.com/questions/1423777/how-can-i-check-whether-a-radio-button-is-selected-with-javascript) - radio button selected
+- [Stack Overflow](https://stackoverflow.com/questions/25793716/how-to-change-style-of-radio-and-checkbox-input) - style radio / checkbox
 - [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#never_use_eval!) - eval()
 - [Medium](https://medium.com/@wbl.pauline/how-to-build-a-calculator-using-javascript-no-more-than-100-lines-of-js-code-b9bd087a14e8) - basic calculator
 - [Stack Overflow](https://stackoverflow.com/questions/32292231/how-to-code-a-calculator-in-javascript-without-eval) - avoiding eval
